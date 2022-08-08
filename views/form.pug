@@ -1,0 +1,9 @@
+extends layout 
+
+block content 
+    h1 = title 
+    form(method='post' action='/new')
+      label(for='name') Name:
+      input#name(type='text' name='name')
+      label(for='message') Message:
+      input#message(type='text' name='message')
