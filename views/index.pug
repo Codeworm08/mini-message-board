@@ -5,4 +5,5 @@ block content
   p Welcome to #{title}
   ul
     each val in messages
-      li= val.text
+      li #{val.user} says #{val.text} on #{val.added}
+  a(href='/new') Add New Message
